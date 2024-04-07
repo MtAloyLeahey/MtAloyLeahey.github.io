@@ -1,58 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Experience - Mt Aloysius Leahey</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
-
-    <style>
-
-        .accordion {
-            max-width: 500px;
-            border: 1px solid #000;
-            border-bottom: none;
-        }
-
-        .accordion:last-child {
-            border-bottom: 1px solid #000;
-        }
-
-        .accordion-header {
-            display: flex;
-            padding: 16px;
-            cursor: pointer;
-            background-color: #F2F2F2;
-        }
-
-        .accordion-title {
-            flex: 1;
-        }
-
-        .accordion-icon {
-            width: 16px;
-        }
-
-        .accordion-content {
-            padding: 16px;
-        }
-
-        .accordion-content {
-            display: none;
-        }
-
-        section {
-            margin: 32px 0;
-        }
-
-    </style>
-
-
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Mt Aloysius Leahey</title>
+    <script>
+      getHeader();
+    </script>
   </head>
   <body>
-
+    <script>
+      getNavbar();
+    </script>
     <div class="container my-5">
 
         <h1>My Experience</h1>
@@ -123,29 +81,15 @@
             </div>
         </div>
 
-</section>
+        </section>
 
     </div>
-
-
-
     <script>
-
-        const accordionHeaders = document.getElementsByClassName('accordion-header');
-        const accordionContents = document.getElementsByClassName('accordion-content');
-        const accordionIcons = document.getElementsByClassName('accordion-icon');
-
-        for (let i = 0; i < accordionHeaders.length; i++) {
-            accordionHeaders[i].addEventListener('click', () => {
-                accordionContents[i].style.display = accordionContents[i].style.display == 'block' ? 'none' : 'block';
-                accordionIcons[i].innerHTML = accordionContents[i].style.display == 'block' ? '-' : '+';
-
-            });
-        }
-
-
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
-</html>
+        getAccordion();
+      </script>
+      <script>
+        getFooter();
+      </script>
+    </body>
+  </html>
+  
